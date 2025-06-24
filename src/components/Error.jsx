@@ -1,3 +1,4 @@
+import React from "react";
 import { useRouteError } from 'react-router-dom';
 
 const Error = () =>{
@@ -28,6 +29,7 @@ const Error = () =>{
           Retry
         </button>
       </div>
+      <h1>OOPS</h1>
         </>
     );
 }

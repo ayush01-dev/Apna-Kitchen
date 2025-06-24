@@ -1,3 +1,4 @@
+import React from "react";
 import { useSelector } from "react-redux";
 import FoodItems from "./FoodItems";
 import "../css/cart.css"

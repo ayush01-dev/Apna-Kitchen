@@ -1,4 +1,5 @@
 // import {RestaurantList} from "../Utils/config.js";
+import React from "react";
 import RestaurantCard from "./RestaurantCard.jsx";
 import { useState, useEffect } from "react";
 import ShimmerUI from "./ShimmerUI";

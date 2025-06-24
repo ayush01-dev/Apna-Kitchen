@@ -57,3 +57,20 @@
   color: #ff4b2b;
   font-weight: 600;
 }
+
+.buttonn {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    margin-top: 15px;
+}
+.buttonn{
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 50%;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}

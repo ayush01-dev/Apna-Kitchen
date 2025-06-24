@@ -9,7 +9,6 @@ import Contact from "./components/Contact.jsx";
 import RestaurantMenu from "./components/RestaurantMenu.jsx";
 import Profile from "./components/Profile.jsx";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import RestaurantMenu from "./components/RestaurantMenu.jsx";
 import { Provider } from "react-redux";
 import store from "./Utils/Redux/store.js";
 

@@ -1,3 +1,5 @@
+import React from "react";
+
 import { IMG_CDN_URL } from "../Common/config";
 
 const RestaurantCard = ({
