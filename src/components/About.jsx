@@ -2,9 +2,8 @@ import burger from "../assets/img/aboutburger.png";
 const About = () =>{
 
     return(
-
         <>
-           <div className="container">
+        <div className="container">
         <div className="text">
             <h2>Welcome to</h2>
             <h1>The world of</h1>

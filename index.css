@@ -230,7 +230,9 @@ a{
 
 .card-container {
   display: flex;
-  gap: 10px;
+  margin-top:10vh;
+  padding:10vh;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -1140,3 +1142,364 @@ input:focus, textarea:focus {
   from { opacity: 0; transform: translateY(-20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Existing styles unchanged for desktop */
+
+/* Responsive Design for Tablet */
+@media screen and (max-width: 1024px) {
+  #Header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #navbar > ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .HeroSection {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  #heading {
+    font-size: 45px;
+  }
+
+  #leftDiv {
+    align-items: center;
+    padding: 0;
+  }
+
+  .btns {
+    flex-direction: column;
+  }
+
+  .Search-Container {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .Search-Container > input,
+  #SearchBtn {
+    width: 100%;
+  }
+
+  .SearchContainer > h1 {
+    font-size: 40px;
+    padding: 8px;
+  }
+
+  .menu-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .menu-card img {
+    margin: 0 0 15px 0;
+  }
+
+  .menu-content .description {
+    font-size: 14px;
+    max-height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .buttons button {
+    font-size: 14px;
+    padding: 8px 12px;
+    width: auto;
+  }
+
+  .Grocerycontainer {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+  }
+
+  .Grocerytext-section, .Groceryimage-section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menuHeading {
+    font-size: 40px;
+    width: 90%;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+  }
+
+  .text h2 {
+    font-size: 60px;
+  }
+
+  .text h1 {
+    font-size: 45px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .card {
+    width: 45%;
+    min-width: 160px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 600px) {
+  #Header {
+    padding: 10px;
+  }
+
+  #navbar > ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .HeroSection {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #heading {
+    font-size: 35px;
+  }
+
+  .btns {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+    min-width: 150px;
+    padding: 10px;
+  }
+
+  .card-image {
+    height: 140px;
+  }
+
+  .card-title h3 {
+    font-size: 14px;
+  }
+
+  .card-content p {
+    font-size: 11px;
+    line-height: 1.3;
+  }
+
+  .rating,
+  .table-booking,
+  .offer-main,
+  .bank-offer {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .Search-Container {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .Search-Container > input,
+  #SearchBtn {
+    width: 100%;
+  }
+
+  .SearchContainer > h1 {
+    font-size: 28px;
+    padding: 8px;
+  }
+
+  .menuHeading {
+    font-size: 30px;
+    width: 90%;
+  }
+
+  .menu-card {
+    flex-direction: column;
+    width: 95%;
+    padding: 10px;
+  }
+
+  .menu-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+
+  .menu-content .description {
+    font-size: 13px;
+    max-height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .buttons button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .text h2 {
+    font-size: 40px;
+  }
+
+  .text h1 {
+    font-size: 30px;
+  }
+
+  .tagline {
+    font-size: 18px;
+  }
+
+  .Grocerycontainer {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+  }
+
+  .Grocerytext-section h1 {
+    font-size: 30px;
+  }
+
+  .Grocerybtn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .Contactcontainer {
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+  }
+
+  #contactUsheader {
+    font-size: 20px;
+    width: 90%;
+    padding: 10px;
+  }
+
+  .fotterContainer {
+    font-size: 12px;
+    padding: 10px;
+    height: auto;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+
+  .loader-container {
+    padding: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 35px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .EroorPageContainer {
+    padding: 20px;
+    text-align: center;
+  }
+
+  #EroorH {
+    font-size: 2rem;
+  }
+
+  #EroorP {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hamburger {
+    display: none; /* completely remove hamburger */
+  }
+
+  #navbar {
+    display: block;
+    position: static;
+    width: auto;
+    background-color: transparent;
+  }
+
+  #navbar > ul {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+  }
+
+  .liTag {
+    display: none; /* hide all normal links on small screen */
+  }
+}
+
+/* End of responsive styles */

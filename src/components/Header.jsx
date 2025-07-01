@@ -1,21 +1,22 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import Rlogo from "../assets/img/logo.png"; // Importing logo image
+import Rlogo from "../assets/img/logo.png";
 
 const Logo = () => {
-  return (
-    <img src={Rlogo} alt="logo" id="logo" />
-  );
+  return <img src={Rlogo} alt="logo" id="logo" />;
 };
 
 const Header = () => {
-  const [loggedInUser, setLoggedInUser] = useState(true);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State for hamburger menu
-  const cartItems = useSelector((store) => store?. cart.Items); // Subscribing to cart store
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const cartItems = useSelector((store) => store?.cart?.Items || []);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen((prev) => !prev);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
   };
 
   return (
@@ -30,20 +31,22 @@ const Header = () => {
 
       <div id="navbar" className={isMenuOpen ? "active" : ""}>
         <ul>
-          <Link to="/" onClick={() => setIsMenuOpen(false)}>
+          <Link to="/" onClick={closeMenu}>
             <li className="liTag">Home</li>
           </Link>
-          <Link to="/about" onClick={() => setIsMenuOpen(false)}>
+          <Link to="/about" onClick={closeMenu}>
             <li className="liTag">About us</li>
           </Link>
-          <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+          <Link to="/contact" onClick={closeMenu}>
             <li className="liTag">Contact Us</li>
           </Link>
-          <Link to="/grocery" onClick={() => setIsMenuOpen(false)}>
+          <Link to="/grocery" onClick={closeMenu}>
             <li className="liTag">Grocery</li>
           </Link>
-          <Link to="/cart" onClick={() => setIsMenuOpen(false)}>
-            <li className="loggedInBtn">Cart - {cartItems.length}</li>
+          <Link to="/cart" onClick={closeMenu}>
+            <li className="loggedInBtn">
+              🛒 Cart - <span>{cartItems.length}</span>
+            </li>
           </Link>
         </ul>
       </div>
