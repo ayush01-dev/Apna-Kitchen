@@ -45,7 +45,7 @@ const Header = () => {
           </Link>
           <Link to="/cart" onClick={closeMenu}>
             <li className="loggedInBtn">
-              🛒 Cart - <span>{cartItems.length}</span>
+               Cart - <span>{cartItems.length}</span>
             </li>
           </Link>
         </ul>

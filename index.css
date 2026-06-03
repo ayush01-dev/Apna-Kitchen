@@ -77,26 +77,28 @@ a{
 /* Ayush Have to work from here */
 .loggedInBtn, .loggedOutBtn{
 
-  width:80px;
-  height:35px;
-  outline-color: black;
-  border: solid black 2px;
-  border-radius:5px;
-  background-color: var(--white-color);
-  color:var(--green-color);
+  width:90px;
+  height:30px;
+  font-size: 18px;
+  font-weight: 20;
+  /* outline-color: black;
+  border: solid black 2px; */
+  border-radius:10px;
+  background-color: var(--green-color);
+  color:var(--white-color);
   cursor: pointer;
 
 }
 
 .loggedInBtn:hover{
 
-  width:80px;
-  height: 35px;
-  outline-color: black;
-  border: solid black 2px;
+  width:90px;
+  height: 30px;
+  /* outline-color: black;
+  border: solid black 2px; */
   border-radius:5px;
-  background-color: var(--yellow-color);
-  color:rgb(1, 41, 1);
+  /* background-color: green; */
+  /* color:rgb(1, 41, 1); */
   cursor: pointer;
 
 }
